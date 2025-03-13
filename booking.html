@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Book an Appointment - Medical Clinic</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Schedule your appointment with our experienced medical professionals">
+    <link rel='stylesheet' type='text/css' media='screen' href='style-1.css'>
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <script src='main.js' defer></script>
+    <link rel="stylesheet" href="improve.php">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <h1><i class="fas fa-clinic-medical"></i> Medical Clinic</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="Index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="doctors.html"><i class="fas fa-user-md"></i> Our Doctors</a></li>
+                    <li><a href="booking.html" class="active"><i class="fas fa-calendar-check"></i> Book Appointment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container booking-section">
+        <div class="booking-header">
+            <h2><i class="fas fa-calendar-alt"></i> Schedule Your Appointment</h2>
+            <p>Please fill in the form below to book your appointment with our medical professionals</p>
+        </div>
+        
+        <form id="appointmentForm" class="booking-form">
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="doctor"><i class="fas fa-user-md"></i> Select Doctor</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="">Choose a doctor</option>
+                    <option value="dr-ali">Dr. Ali Ahmed - Cardiologist</option>
+                    <option value="dr-mohammed">Dr. Mohammed - Pediatrician</option>
+                    <option value="dr-riadh">Dr. Riadh Al-absee - Orthopedic</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="date"><i class="fas fa-calendar-day"></i> Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="time"><i class="fas fa-clock"></i> Preferred Time</label>
+                <select id="time" name="time" required>
+                    <option value="">Select time slot</option>
+                    <option value="09:00">09:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="14:00">02:00 PM</option>
+                    <option value="15:00">03:00 PM</option>
+                    <option value="16:00">04:00 PM</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="reason"><i class="fas fa-comment-medical"></i> Reason for Visit</label>
+                <textarea id="reason" name="reason" rows="4" placeholder="Please briefly describe your symptoms or reason for visit" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn"><i class="fas fa-check-circle"></i> Confirm Appointment</button>
+        </form>
+        
+        <div class="booking-info">
+            <h3><i class="fas fa-info-circle"></i> Important Information</h3>
+            <ul>
+                <li>Please arrive 15 minutes before your appointment time</li>
+                <li>Bring any relevant medical records or test results</li>
+                <li>Wear a face mask during your visit</li>
+                <li>Reschedule if you have any COVID-19 symptoms</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Medical Clinic. Designed by Zain &Abdulaziz & Nader</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
